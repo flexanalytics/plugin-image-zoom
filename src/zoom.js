@@ -12,6 +12,10 @@ const { themeConfig } = siteConfig;
 
 export default (function () {
 
+  if ( typeof window === 'undefined' ) {
+    return null;
+  }
+
   const selector = (themeConfig&&themeConfig.zoomSelector) || '.markdown img';
 
   setTimeout(() => {
