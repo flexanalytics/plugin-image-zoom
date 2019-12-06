@@ -25,9 +25,15 @@ export default (function () {
 
   return {
     onRouteUpdate({ location }) {
+
+      if( location && location.hash && location.hash.length ) {
+        return;
+      }
+
       setTimeout(() => {
         mediumZoom(selector);
       }, 100);
+
     },
   };
 })();
