@@ -20,7 +20,7 @@ export default (function () {
 
   setTimeout(() => {
     mediumZoom(selector);
-  }, 100);
+  }, 1000);
 
 
   return {
