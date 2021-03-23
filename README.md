@@ -9,3 +9,9 @@
     'plugin-image-zoom'
   ],
 ```
+* Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.config.js`, like this:
+``` js
+  themeConfig: {
+    zoomSelector: '.markdown :not(em) > img',
+  },
+```
