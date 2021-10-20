@@ -1,5 +1,9 @@
 # Image Zoom Plugin for Docusaurus 2
 
+This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium-zoom) library to allow for zoom in/out on images in your documentation.
+
+![](/img/zoom_example.gif)
+
 ## Install and Configure
 
 * npm install ataft/plugin-image-zoom
