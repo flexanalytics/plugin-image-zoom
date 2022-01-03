@@ -6,7 +6,7 @@ This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium
 
 ## Install and Configure
 
-* npm install ataft/plugin-image-zoom
+* npm install flexanalytics/plugin-image-zoom
 * Add as a plugin to `docusaurus.config.js`, like this:
 ``` js
   plugins: [
