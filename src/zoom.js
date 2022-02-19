@@ -17,12 +17,12 @@ export default (function () {
   }
 
   // Backwards compatibility
-  const { zoomSelector } = themeConfig;
+  const { zoomSelector = '.markdown img' } = themeConfig;
   const {
     imageZoom: {
-      selector = zoomSelector || '.markdown img',
+      selector = zoomSelector,
       options,
-    }
+    } = {},
   } = themeConfig;
 
   setTimeout(() => {
