@@ -15,12 +15,15 @@ This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium
   ],
 ```
 
-- Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.config.js`, like this:
+- Configure the plugin in `docusaurus.config.js`, like this:
 
 ```js
   themeConfig: {
     imageZoom: {
+      // CSS selector to apply the plugin to, defaults to '.markdown img'
       selector: '.markdown img',
+      // Optional medium-zoom options
+      // see: https://www.npmjs.com/package/medium-zoom#options
       options: {
         margin: 24,
         background: '#BADA55',
@@ -34,7 +37,7 @@ This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium
 
 ## Excluding Images from using Zoom
 
-If you want to exclude certain images from using the zoom, then you'll need to apply a special tag to the image in your markdown and then use the `zoomSelector` option in `themeConfig` to exclude that tag.
+If you want to exclude certain images from using the zoom, then you'll need to apply a special tag to the image in your markdown and then use the `imageZoom.selector` option in `themeConfig` to exclude that tag.
 
 For example, in your markdown you could wrap the image in an `<em>` tag, as such:
 

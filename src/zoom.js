@@ -18,6 +18,8 @@ export default (function () {
 
   // Backwards compatibility
   const { zoomSelector = '.markdown img' } = themeConfig;
+
+  // Allow medium-zoom options: https://www.npmjs.com/package/medium-zoom#options
   const {
     imageZoom: {
       selector = zoomSelector,
