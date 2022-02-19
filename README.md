@@ -31,7 +31,7 @@ This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium
         container: '#zoom-container',
         template: '#zoom-template',
       },
-    }
+    },
   },
 ```
 
@@ -49,7 +49,9 @@ Then, exclude images inside an `<em>` tag, as such:
 
 ```js
   themeConfig: {
-    zoomSelector: '.markdown :not(em) > img',
+    imageZoom: {
+      selector: '.markdown :not(em) > img',
+    },
   },
 ```
 
