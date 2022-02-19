@@ -6,17 +6,29 @@ This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium
 
 ## Install and Configure
 
-* npm install flexanalytics/plugin-image-zoom
-* Add as a plugin to `docusaurus.config.js`, like this:
-``` js
+- npm install flexanalytics/plugin-image-zoom
+- Add as a plugin to `docusaurus.config.js`, like this:
+
+```js
   plugins: [
     'plugin-image-zoom'
   ],
 ```
-* Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.config.js`, like this:
-``` js
+
+- Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.config.js`, like this:
+
+```js
   themeConfig: {
-    zoomSelector: '.markdown img',
+    imageZoom: {
+      selector: '.markdown img',
+      options: {
+        margin: 24,
+        background: '#BADA55',
+        scrollOffset: 0,
+        container: '#zoom-container',
+        template: '#zoom-template',
+      },
+    }
   },
 ```
 
@@ -25,17 +37,18 @@ This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium
 If you want to exclude certain images from using the zoom, then you'll need to apply a special tag to the image in your markdown and then use the `zoomSelector` option in `themeConfig` to exclude that tag.
 
 For example, in your markdown you could wrap the image in an `<em>` tag, as such:
-``` md
-click on the *![](/img/portal/new.png)* button...
+
+```md
+click on the _![](/img/portal/new.png)_ button...
 ```
 
 Then, exclude images inside an `<em>` tag, as such:
-``` js
+
+```js
   themeConfig: {
     zoomSelector: '.markdown :not(em) > img',
   },
 ```
-
 
 ## See `plugin-image-zoom` in action
 

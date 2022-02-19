@@ -16,10 +16,17 @@ export default (function () {
     return null;
   }
 
-  const selector = (themeConfig&&themeConfig.zoomSelector) || '.markdown img';
+  // Backwards compatibility
+  const { zoomSelector } = themeConfig;
+  const {
+    imageZoom: {
+      selector = zoomSelector || '.markdown img',
+      options,
+    }
+  } = themeConfig;
 
   setTimeout(() => {
-    mediumZoom(selector);
+    mediumZoom(selector, options);
   }, 1000);
 
 
@@ -31,7 +38,7 @@ export default (function () {
       }
 
       setTimeout(() => {
-        mediumZoom(selector);
+        mediumZoom(selector, options);
       }, 1000);
 
     },
