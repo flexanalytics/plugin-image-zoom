@@ -58,3 +58,7 @@ Then, exclude images inside an `<em>` tag, as such:
 ## See `plugin-image-zoom` in action
 
 Check out the [FlexIt Analytics Docs](https://learn.flexitanalytics.com/) website, built 100% with Docusaurus, to see this plugin in action.
+
+## medium-zoom plugin and Using a custom viewport
+This plugin uses the [medium-zoom plugin](https://github.com/francoischalifour/medium-zoom), so you can refer to the medium-zoom docs for configuration settings. One common configuration is [Using a Custom Viewport](https://github.com/francoischalifour/medium-zoom/blob/master/docs/container.md). The zoom is by default rendered in the window viewport. You can also render your image in any element of the DOM, or any custom coordinates with the container option.
+
