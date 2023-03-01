@@ -1,10 +1,27 @@
 {
   "name": "plugin-image-zoom",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "private": false,
   "scripts": {},
   "main": "src/index.js",
   "dependencies": {
     "medium-zoom": "^1.0.4"
-  }
+  },
+  "description": "This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium-zoom) library to allow for zoom in/out on images in your documentation.",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexanalytics/plugin-image-zoom.git"
+  },
+  "keywords": [
+    "docusaurus",
+    "zoom",
+    "plugin"
+  ],
+  "author": "ataft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flexanalytics/plugin-image-zoom/issues"
+  },
+  "homepage": "https://github.com/flexanalytics/plugin-image-zoom#readme"
 }
