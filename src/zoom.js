@@ -33,9 +33,12 @@ export default (function () {
 
 
   return {
-    onRouteUpdate({ location }) {
-
+    onRouteUpdate({ location , previousLocation}) {
       if( location && location.hash && location.hash.length ) {
+        return;
+      }
+
+      if (!previousLocation || location.pathname === previousLocation.pathname) {
         return;
       }
 
