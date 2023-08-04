@@ -5,10 +5,9 @@
   "scripts": {},
   "main": "src/index.js",
   "dependencies": {
-    "medium-zoom": "^1.0.4"
+    "medium-zoom": "^1.0.8"
   },
   "description": "This plugin uses the [`medium-zoom`](https://github.com/francoischalifour/medium-zoom) library to allow for zoom in/out on images in your documentation.",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flexanalytics/plugin-image-zoom.git"
